@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:tint="@color/colorCardView">
+    <corners
+        android:topLeftRadius="25dp"
+        android:topRightRadius="25dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/colorprin"
+        android:dashWidth="1dp" />
+</shape>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_busqueda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    app:cardBackgroundColor="@color/colorCardView"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="@color/colorTabScroll"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/colorCardView"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_car"
+                    app:tint="@color/colorprin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/agregar_transacci_n"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorprin"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/lDispo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/colorCardView"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+                app:contentPadding="5dp">
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="24dp"
+                            android:hint="@string/placa"
+                            android:textColorHint="@color/colorTextHint"
+                            app:boxStrokeColor="@color/colorprin"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/colorIconosOpaco"
+                            app:hintTextColor="@color/colorTextoTitulos"
+                            app:startIconDrawable="@drawable/ic_car"
+                            app:startIconTint="@color/colorprin">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/placa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorTexto"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="24dp"
+                            android:hint="@string/horas"
+                            android:textColorHint="@color/colorTextHint"
+                            app:boxStrokeColor="@color/colorprin"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/colorIconosOpaco"
+                            app:hintTextColor="@color/colorTextoTitulos"
+                            app:startIconDrawable="@drawable/ic_hora"
+                            app:startIconTint="@color/colorprin">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/nhoras"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorTexto"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="@color/colorCardView"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/BRealizarTransaccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_background"
+                        android:onClick="MetodoIniciarSesion"
+                        android:padding="5dp"
+                        android:text="@string/guardar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lOcu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="@color/colorCardView"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/Bliberar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_background"
+                        android:padding="5dp"
+                        android:text="@string/liberar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

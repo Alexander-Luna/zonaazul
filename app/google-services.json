@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622105912558",
+    "project_id": "zona-azul-5b75a",
+    "storage_bucket": "zona-azul-5b75a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622105912558:android:9485e8f984365f505cbfff",
+        "android_client_info": {
+          "package_name": "com.softec.zonaazul"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvrOz5uoGfujAo5m9hVbXtiYhz58xApKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
